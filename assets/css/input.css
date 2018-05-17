@@ -1,0 +1,22 @@
+#input {
+	padding: 3px;
+	border-bottom: 1px solid #aaa;
+	display: inline-block;
+	color: #aaa;
+	cursor: pointer;
+	transition: 0.3s;
+}
+#input input{
+	border: none;
+	background-color: inherit;
+}
+#input.hover, #input:hover{
+	border-color: dodgerBlue;
+	color: dodgerBlue;
+}
+#input.hover input::placeholder, #input:hover input::placeholder{
+	color: DarkRed;
+}
+#input i{
+	margin-right: 3px;
+}

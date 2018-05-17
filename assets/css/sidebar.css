@@ -1,0 +1,70 @@
+.sidebar{
+	background-color: var(--sb);
+	color: var(--fsb);
+	position: fixed;
+	width: 270px;
+	height: 100%;
+	overflow: hidden;
+}
+.sidebar .logo{
+	background-color: var(--bgLogo);
+	padding: 5px;
+	text-align: center;
+	box-shadow: 9px 0px 9px 9px var(--sba);
+	margin-bottom: 15px;
+}
+.sidebar .menu{
+	padding: 15px 23px;
+	cursor: pointer;
+}
+.sidebar .submenu{
+	margin: 15px -23px -15px -23px;
+	padding: 15px 23px 15px 55px;
+	background-color: var(--sb);
+	color: var(--fsb);
+	display: none;
+}
+.sidebar .hover{
+	background-color: var(--sbh);
+	color: #fff;
+}
+.sidebar .aktif{
+	background-color: var(--sba);
+	color: #fff;
+}
+.sidebar .menu.page .submenu{
+	display: block;
+}
+.sidebar .spage{
+	margin-left: 13px;
+	padding-left: 19px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	background-color: var(--bg);
+	color: var(--sb);
+}
+.sidebar i{
+	margin-right: 9px;
+}
+.sidebar .tstat{
+	width: 100%;
+	margin-top: 11px;
+	font-size: 14px;
+}
+.sidebar .tstat th, .sidebar .tstat td{
+	color: var(--fsb);
+}
+.sidebar .tstat th{
+	padding: 7px 23px;
+	font-weight: normal;
+	text-align: left;
+}
+.sidebar .tstat td{
+	padding: 5px;
+}
+.sidebar .tstat td:first-child{
+	padding-left: 23px;
+}
+.sidebar .tstat td:last-child{
+	padding-right: 23px;
+}

@@ -1,0 +1,91 @@
+html, body{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-color: var(--bg);
+	font-family: Roboto,'Helvetica Neue',Arial,sans-serif;
+	font-size: 17px;
+}
+table{
+	border-collapse: collapse;
+}
+select{
+	padding       : 3px 9px 3px 3px;
+	border        : 1px solid #aaa;
+	border-radius : 2px;
+	cursor        : pointer;
+}
+select:hover, select:focus{
+	border-color: dodgerBlue;
+}
+input:focus{
+	outline-style: none;
+	box-shadow: none;
+	border-color: transparent;
+}
+ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	border: thin solid dodgerBlue;
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+	background-color: #fff;
+	position: absolute;
+	z-index: 200;
+}
+li{
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	padding: 7px;
+	cursor: pointer;
+	color: dodgerBlue;
+}
+li img{
+	height: 25px;
+	float: left;
+	border-radius: 3px;
+	margin-right: 7px;
+}
+a, a:hover, a:link, a:visited, a:link:active, a:visited:active{
+	text-decoration: none;
+	outline: none;
+}
+button{
+	padding: 5px;
+	cursor: pointer;
+}
+.sidebar a, .sidebar a:hover, .sidebar a:link, .sidebar a:visited, .sidebar a:link:active, .sidebar a:visited:active{
+	color: inherit;
+}
+.unselectable{	
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.fit-td{
+	width: 1px;
+	white-space: nowrap;
+}
+.r{
+	text-align: right;
+}
+.c{
+	text-align: center;
+}
+.b{
+	font-weight: bold;
+}
+.blink{
+	animation:  blinker 0.5s linear infinite;
+	font-style: oblique;
+}
+.spc{
+	width: 20px;
+	text-align: center;
+}

@@ -1,0 +1,236 @@
+.konten a{
+	color: indigo;
+}
+.konten a:hover{
+	color: dodgerBlue;
+}
+.nbox a{
+	color: var(--bg);
+}
+.nbox a:hover{
+	color: #aaa;
+}
+.box{
+	margin: 7px;
+	background-color: #fff;
+	width: calc(100% - 14px);
+	border: thin solid var(--sb);
+	border-radius: 7px;
+	overflow: hidden;
+}
+.nbox{
+	padding: 7px;
+	font-size: 17px;
+	font-weight: bold;
+	background-color: var(--sb);
+	color: var(--bg);
+	display: flex;
+	align-items: center;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+.nbox img{
+	height: 25px;
+	margin-right: 7px;
+	border-radius: 3px;
+}
+.nbox i{
+	margin-right: 7px;	
+}
+.lbrg{
+	margin: 5px;
+	font-weight: bold;
+}
+.beli{
+	color: var(--bl);
+}
+.jual{
+	color: var(--toped);
+}
+.tbeli, .tjual{
+	margin: 5px;
+	width: calc(100% - 10px);
+	font-size: 11.25px;
+}
+.tbeli th{
+	background-color: var(--bl);
+	color: var(--bg);
+}
+.tbeli th, .tbeli td{
+	padding: 3px;
+	border: thin solid var(--bbeli);
+}
+.tjual th{
+	background-color: var(--toped);
+	color: var(--bg);
+}
+.tjual th, .tjual td{
+	padding: 3px;
+	border: thin solid var(--bjual);
+}
+td.nobor{
+	border: none !important;
+}
+[data-stat="Shipping"], [data-stat="Packing"]{
+	color: var(--bl);
+}
+[data-stat="Received"], [data-stat="Selesai"]{
+	color: var(--toped);
+}
+[data-stat="Shipping (Set Selesai Jual)"], [data-stat="Packing (Masukkan Nomor Resi)"], [data-stat="Shipping (Set Received)"]{
+	color: var(--bl);
+	animation:  blinker 0.5s linear infinite;
+	font-style: oblique;
+	cursor: pointer;
+}
+[data-media="Tokopedia"]{
+	color: var(--toped);
+}
+[data-media="Bukalapak"]{
+	color: var(--bl);
+}
+[data-media="Shopee"]{
+	color: var(--sopi);
+}
+[data-media="WhatsApp"]{
+	color: var(--wa);
+}
+[data-media="newTx"]{
+	color: indigo;
+}
+.box[data-media="Tokopedia"]{
+	border-color: var(--toped);
+}
+.box[data-media="Bukalapak"]{
+	border-color: var(--bl);
+}
+.box[data-media="Shopee"]{
+	border-color: var(--sopi);
+}
+.box[data-media="WhatsApp"]{
+	border-color: var(--wa);
+}
+.box[data-media="newTx"]{
+	border-color: indigo;
+}
+.nbox[data-media]{
+	color: var(--bg);
+}
+.nbox[data-media="Tokopedia"]{
+	background-color: var(--toped);
+}
+.nbox[data-media="Bukalapak"]{
+	background-color: var(--bl);
+}
+.nbox[data-media="Shopee"]{
+	background-color: var(--sopi);
+}
+.nbox[data-media="WhatsApp"]{
+	background-color: var(--wa);
+}
+.nbox[data-media="newTx"]{
+	background-color: indigo;
+}
+.tmaster, .tdtil{
+	margin: 5px;
+	width: calc(100% - 10px);
+}
+.tdtil th{
+	background-color: var(--bg);
+}
+.tdtil th, .tdtil td{
+	padding: 3px;
+	font-size: 12px;
+	border: thin solid;
+	border-color: inherit;
+}
+.tdtil img{
+	height: 25px;
+	border-radius: 5px;
+	float: left;
+}
+.btn-save, .btn-del{	
+	text-align: center;
+	cursor: pointer;
+	color: var(--bg);
+}
+.btn-save{
+	background-color: var(--toped);
+	border: thin solid var(--toped) !important;
+}
+.btn-del{
+	background-color: var(--bl);
+	border: thin solid var(--bl) !important;
+}
+.btn-save:hover{
+	background-color: var(--bjual);
+}
+.btn-del:hover{
+	background-color: var(--bbeli);
+}
+table.addBrg{
+	width: 100%;
+	margin: 9px 0px;
+	border-bottom: thin solid #aaa;
+	font-size: 13px;
+	color: var(--toped);
+	background-color: Ivory;
+}
+table.addBrg td{
+	border-top: thin solid #aaa;	
+	padding: 5px;
+}
+table.tempTR{
+	display: none;
+}
+.sHover{
+	background-color: dodgerBlue;
+	color: var(--bg);
+}
+td.top{
+	vertical-align: top;
+}
+td div{
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+td div img{
+	margin-right: 9px;
+}
+.cardBrg{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+.card{
+	display: inline-block;
+	overflow: hidden;
+	border: 2px solid var(--wa);
+	border-radius: 5px;
+	background-color: #fff;
+}
+.card img{
+	height        : 50px;
+	width         : 50px;
+	overflow      : hidden;
+	float         : left;
+	margin        : 3px;
+	border-radius : 3px;
+	cursor        : pointer;
+}
+.card .label{
+	border-left : thin solid var(--wa);
+	color       : var(--wa);
+	display     : flex;
+	align-items : center;
+	text-align  : left;
+	overflow    : hidden;
+	width       : 285px;
+	height      : 50px;
+	font-weight : bold;
+	font-size   : 12px;
+	padding     : 3px;
+}

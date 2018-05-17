@@ -1,0 +1,79 @@
+.overlay{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: rgba(43,48,59,0.95);
+	z-index: 8888;
+	display: none;
+	align-items: center;
+	justify-content: center;
+}
+.overlay .dialog{
+	background-color: #fff;
+	border: 2px solid #aaa;
+	border-radius: 7px;
+	display: none;
+}
+.overlay .dialog h3{
+	margin:5px;
+}
+.password{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	align-items: center;
+	background-color: var(--sba);
+	opacity: 0.97;
+	z-index: 10000;
+	display: none;
+}
+.password .bpass{
+	padding: 15px;
+	width: 100%;
+	background-color: var(--bg);
+	text-align: center;
+}
+.password .salah{
+	margin: 5px 0px -11px 0px;
+	color: var(--bl);
+	font-size: 15px;
+	display: none;
+}
+.password .close, .overlay .dialog .close{
+	top: 7px;
+	right: 7px;
+	position: absolute;
+	border: 3px solid var(--bg);
+	background-color: var(--bg);
+	border-radius: 50%;
+	cursor: pointer;
+	transition: 0.2s;
+}
+.password .close:hover, .overlay .dialog .close:hover{
+	color: var(--bl);
+}
+.konten, .loading{
+	position: fixed;
+	margin-left: 270px;
+	height: 100%;
+	width: calc(100% - 270px);
+	overflow: hidden;
+	overflow-y: auto;
+}
+.konten hr{
+	margin  : 0px;
+	padding : 0px;
+}
+.loading{
+	background-color: var(--bg);
+	font-size: 19px;
+	font-style: oblique;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 9999;
+}
+.loading i{
+	margin-right: 15px;
+}
